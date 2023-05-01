@@ -1,0 +1,761 @@
+* {
+    max-width: 414px;
+}
+
+html {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: rgba(122, 191, 191, .5);
+    text-align: center;
+}
+
+header {
+    background-color: #F2F2F2;
+}
+
+.secondnav-bigtaco {
+    background-color: #F2F2F2;
+}
+
+.st {
+    display: none;
+}
+
+
+#bigtaco figcaption {
+    text-align: left;
+    padding: 20px;
+}
+
+.sidedishes {
+    background-color: #7ABFBF;
+}
+
+.sidedishesdiv {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.sidedishesdiv span {
+    font-weight: bold;
+}
+
+.out-of-stars {
+    display: none;
+}
+
+.ricepic {
+    grid-column-start: 1;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.salsapic {
+    grid-column-start: 1;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.guacpic {
+    grid-column-start: 1;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tortillapic {
+    grid-column-start: 1;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sidedishesdiv h3 {
+    font-size: 20px;
+    text-align: left;
+    transform: translateY(-20px);
+}
+
+.sidedishesdiv svg {
+    transform: translateX(-5px);
+}
+
+.rice {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    transform: translateY(30px);
+}
+
+.salsa {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    transform: translateY(30px);
+}
+
+.guacamole {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    transform: translateY(30px);
+}
+
+.tortillas {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    transform: translateY(30px);
+}
+
+#goodeats {
+    display: none;
+}
+
+#sociallinks {
+    display: none;
+}
+
+section {
+    background-color: #F2F2F2;
+}
+
+p,
+li {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+footer p {
+    font-family: Bebas Neue;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+footer img {
+    width: 50%;
+    order: -1;
+}
+
+
+#social {
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+#social li {
+    display: inline-block;
+    font-family: Bebas Neue;
+    vertical-align: top;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#social a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+#social a svg {
+    display: block;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+
+nav a,
+nav span,
+menu li,
+#social li,
+footer {
+    font-size: 20px;
+}
+
+.secondnav {
+    background-color: #F2F2F2;
+}
+
+.secondnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.secondnav li {
+    display: inline-block;
+    font-family: Bebas Neue;
+    vertical-align: top;
+}
+
+.secondnav a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+.secondnav a svg {
+    display: block;
+    margin-bottom: 5px;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.secondnav a:hover {
+    color: #7ABFBF;
+}
+
+.mainnav {
+    grid-row-start: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.mainnav svg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home {
+    grid-column-start: 2;
+    display: contents;
+    background-color: #EB5428;
+}
+
+.avatar {
+    grid-column-start: 3;
+    background-color: white;
+}
+
+.avatar svg {
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.avatar h3 {
+    color: black !important;
+    white-space: nowrap;
+    margin-top: 0px;
+}
+
+.mainnav h3 {
+    margin: 0px;
+}
+
+.mainnav span {
+    display: none;
+}
+
+.mainnav .up {
+    display: contents;
+    font-size: 25px;
+}
+
+.mainnav ul {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+label svg {
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked~ul {
+    max-height: 500px;
+}
+
+
+.mainnav li {
+    display: inline-block;
+    font-family: Bebas Neue;
+}
+
+.mainnav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.search {
+    background-color: #F2F2F2;
+    grid-row-start: 2;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.search h3 {
+    display: none;
+}
+
+.search button {
+    background-color: #EB5428;
+    border: 2px solid #EB5428;
+}
+
+.search label {
+    border: 2px solid #EB5428;
+    font-family: Montserrat;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-top: 15px;
+    width: 255px;
+    height: 16px;
+    text-align: left;
+}
+
+
+title {
+    display: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Bebas Neue;
+}
+
+strong {
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+li,
+p,
+figcaption {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.ingredients li {
+    padding-bottom: 20px;
+    margin-left: -5px;
+    margin-bottom: 0px;
+}
+
+.details p {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.directions li {
+    margin-top: 0px;
+    margin-left: -5px;
+    padding-bottom: 20px;
+}
+
+.ingredients-directions {
+    display: grid;
+    background-color: #F2F2F2;
+}
+
+@media screen and (min-width: 768px) {
+    * {
+        max-width: 768px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .mainnav {
+        background-color: #ffffff;
+        padding-bottom: 150px;
+    }
+
+    .mainnav ul {
+        display: contents;
+        display: flex;
+        flex-direction: row;
+        grid-row-start: 2;
+    }
+
+    .mainnav li {
+        padding: 10px;
+    }
+
+    label {
+        display: none;
+    }
+
+    .home {
+        grid-column-start: 1;
+        width: 10%;
+    }
+
+    .avatar {
+        transform: translateX(-120px);
+    }
+
+    .search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: rgba(255, 255, 255, .0);
+    }
+
+    .mainnav .up {
+        display: none;
+    }
+
+    .mainnav img {
+        width: 70px;
+    }
+
+    .secondnav {
+        background-color: rgba(255, 255, 255, .7);
+        position: absolute;
+        top: 1;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .secondnav li {
+        padding: 40px;
+        padding-top: 0px;
+        padding-top: 0px;
+    }
+
+    .details p {
+
+        text-align: center;
+    }
+
+    .ingredients-directions {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .ingredients {
+        grid-column-start: 1;
+    }
+
+    .directions {
+        grid-column-start: 2;
+    }
+
+    .directions li {
+        padding-bottom: 60px;
+    }
+
+    .sidedishesdiv {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .rice {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .salsa {
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+
+    .guacamole {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .tortillas {
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    .ricepic {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .salsapic {
+        grid-column-start: 3;
+    }
+
+
+    .guacpic {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .tortillapic {
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+
+    .social-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+    }
+
+    footer {
+        grid-column-start: 1;
+        align-items: center;
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+        transform: translateY(-300px);
+    }
+
+    footer img {
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    #social {
+        grid-column-start: 2;
+        padding-bottom: 200px;
+    }
+
+    #social li {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    * {
+        max-width: 1200px;
+    }
+
+    .mainnav ul {
+        grid-row-start: 1;
+        transform: translateX(200px);
+    }
+
+    .avatar {
+        transform: translateX(0.1px);
+    }
+
+    .secondnav {
+        position: relative;
+        border: 2px solid #EB5428;
+    }
+
+    .secondnav li {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 85px;
+    }
+
+    .secondnav-bigtaco {
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
+    }
+
+    .secondnav {
+        grid-column-start: 1;
+    }
+
+    #bigtaco img {
+        width: 100%;
+    }
+
+    #bigtaco {
+        grid-column-start: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #bigtaco img {
+        grid-column-start: 1;
+    }
+
+    #bigtaco figcaption {
+        grid-column-start: 2;
+    }
+
+    .st {
+        display: contents;
+        background-color: #F2F2F2;
+    }
+
+    .st h1 {
+        background-color: #F2F2F2;
+        text-align: center;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    #jump {
+        background-color: #0D0D0D;
+        color: #7ABFBF;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 60px;
+    }
+
+    .details p {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2;
+    }
+
+    .details strong {
+        grid-row-start: 1;
+    }
+
+    .details span {
+        grid-row-start: 2;
+    }
+
+    .sidedishesdiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-right: 20px;
+        margin-left: 10px;
+        margin-bottom: -90px;
+    }
+
+    .sidedishesdiv p,
+    .sidedishesdiv h3 {
+        padding-left: 25px;
+    }
+
+    .sidedishesdiv img {
+        width: 90%;
+    }
+
+    .rice {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    .salsa {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .guacamole {
+        grid-row-start: 2;
+        grid-column-start: 3;
+    }
+
+    .tortillas {
+        grid-row-start: 2;
+        grid-column-start: 4;
+    }
+
+    .ricepic {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .salsapic {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    .guacpic {
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+
+    .tortillapic {
+        grid-row-start: 1;
+        grid-column-start: 4;
+    }
+
+    #social li {
+        padding: 40px;
+    }
+
+    footer img {
+        width: 50%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+    }
+
+    footer img {
+        grid-column-start: 1;
+        transform: translateX(10px);
+    }
+
+    footer p {
+        grid-column-start: 2;
+        align-items: left;
+        transform: translateX(-200px);
+    }
+}
