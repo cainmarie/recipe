@@ -759,3 +759,27 @@ figcaption {
         transform: translateX(-200px);
     }
 }
+
+@media print {
+    body {
+        margin: 0.5in;
+        font-family: serif, sans-serif;
+    }
+
+    img {
+        filter: grayscale(100%);
+    }
+
+    nav {
+        display: none;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+
+    @page {
+        size: 8.5in 11in;
+        margin: 0.5in;
+    }
+}
